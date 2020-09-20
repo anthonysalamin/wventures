@@ -517,10 +517,11 @@ img {
 }
 
 .usebasin-bot {
-  display: none;
+  display: block;
 }
 
-.html-embed {
+.usebasin-captcha {
+  display: inline-block;
   color: #fff;
 }
 

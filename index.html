@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Fri Sep 18 2020 13:51:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Sep 20 2020 10:41:41 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f648184818b3d0fa7cf81d6" data-wf-site="5f648184818b3d24bfcf81d3" lang="en">
 
 <head>
@@ -206,7 +206,7 @@
       <div class="w-form">
         <form id="wf-form-contact" name="wf-form-contact" data-name="contact" method="post"
           action="https://usebasin.com/f/17c71d7c39d7">
-          <div>
+          <div class="w-clearfix">
             <div class="w-row">
               <div class="form-column w-col w-col-4"><input type="text" class="form-field w-input" maxlength="256"
                   name="Name" data-name="Name" placeholder="Full name *" id="Name" required=""></div>
@@ -216,16 +216,10 @@
                   name="Email" data-name="Email" placeholder="Email *" id="Email" required=""></div>
             </div><textarea id="Message" name="Message" maxlength="5000" data-name="Message" required=""
               placeholder="Message *" class="form-field form-message w-input"></textarea>
-            <div class="usebasin-bot w-embed"><input type="hidden" name="_gotcha"><input></div>
-            <div class="html-embed w-embed">
-              <style>
-                .grecaptcha-badge {
-                  display: none;
-                }
-              </style>
-              <button class="g-recaptcha submit-button" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"
-                data-callback="onSubmit" data-badge="inline">Submit</button>
-            </div>
+            <div class="usebasin-bot w-embed"><input type="hidden" name="_gotcha"></div>
+            <div class="usebasin-captcha w-embed">
+              <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
+            </div><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button">
           </div>
         </form>
         <div class="w-form-done">
@@ -299,8 +293,8 @@
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
     /*
-    * usebasin hide recaptcha
-    * build date: 18.09.2020 | anthonysalamin.ch
+     * usebasin hide recaptcha
+     * build date: 18.09.2020 | anthonysalamin.ch
     */
     function onSubmit(token) {
       const submitBtn = document.getElementsByClassName("g-recaptcha")[0];
@@ -317,10 +311,6 @@
   <script>
     /* Google Maps */
     function initMap() { var e = new google.maps.LatLng(52.50865, 13.32147), o = new google.maps.Map(document.getElementById("map"), { zoom: 15, center: e, mapTypeControl: !1, gestureHandling: "cooperative", fullscreenControl: !1 }), n = { url: "https://uploads-ssl.webflow.com/59e102577032510001baf5a9/5bd03bfbea1352f432de7340_google-marker-wventures.svg", size: new google.maps.Size(60, 60), origin: new google.maps.Point(0, 0), anchor: new google.maps.Point(25, 65), scaledSize: new google.maps.Size(60, 60) }, t = new google.maps.InfoWindow({ content: '<div id="content"><div id="siteNotice"></div><div id="bodyContent"> <p><b>W Ventures GmbH</b></br> Goethestraße 81</br> 10623 Berlin</br> Germany</p> </div></div>' }), a = new google.maps.Marker({ position: o.getCenter(), animation: google.maps.Animation.BOUNCE, icon: n, map: o, draggable: !1, title: "Wventures's Headquarter" }); a.addListener("click", function () { t.open(map, a) }) }
-  </script>
-  <script>
-    console.log("usebasin running");
-  </script>
   </script>
 </body>
 
