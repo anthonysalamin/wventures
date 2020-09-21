@@ -310,45 +310,93 @@
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
     /*
-     * usebasin AJAX
-     * build date: 21.09.2020 | anthonysalamin.ch
+      * usebasin AJAX CORS request
     */
-    $('form[action^="https://usebasin.com"]').each(function (i, el) {
-      form = $(el);
-      form.submit(function (e) {
-        /* stop the form from submitting */
-        e.preventDefault();
-        form = $(e.target);
-        /* get the form's action parameter and add ".json" to the end */
-        action = form.attr("action") + ".json";
-        /* submit the form via ajax */
-        $.ajax({
-          url: action,
-          method: "POST",
-          data: form.serialize(),
-          dataType: "json",
-          success: function (data) {
-            if (data.success) {
-              /* successful submission - hide the form and show the success message */
-              console.log("success, form sent");
-              parent = $(form.parent());
-              form.css("display", "none");
-              document.querySelector(".w-form-done").style.display = "block";
-              document.querySelector(".w-form-fail").style.display = "none";
-            } else {
-              /* failed submission - log the output to the console and show the failure message */
-              console.log(data);
-              document.querySelector(".w-form-fail").style.display = "block";
-            }
-          },
-          error: function () {
-            /* failed submission - show the failure message */
-            console.log("error, recaptcha not validated");
-            document.querySelector(".w-form-fail").style.display = "block";
-          }
-        });
-      });
-    });
+    document.addEventListener("DOMContentLoaded", (event) => {
+      // options
+      const log = console.log,
+        form = document.getElementById("wf-form-contact");
+
+      // on submit, execute custom action
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        createCORSRequest();
+        makeCORSRequest();
+      }); // end click listener
+
+      // 🥬 Create the XHR object
+      function createCORSRequest(method, action) {
+        let xhr = new XMLHttpRequest();
+        if ("withCredentials" in xhr) {
+          // XHR for Chrome/Firefox/Opera/Safari
+          xhr.open(method, action, true);
+        } else if (typeof XDomainRequest != "undefined") {
+          // XDomainRequest for IE
+          xhr = new XDomainRequest();
+          xhr.open(method, action);
+        } else {
+          // CORS not supported
+          xhr = null;
+        }
+        return xhr;
+      } // end createCORSRequest()
+
+      // 🥭 Make the actual CORS request
+      function makeCORSRequest() {
+        const method = "POST",
+          action = `https://usebasin.com/f/17c71d7c39d7.json`,
+          dataType = "json",
+          formData = new FormData(form);
+
+        let xhr = createCORSRequest(method, action);
+        if (!xhr) {
+          alert("Sorry, CORS not supported.");
+          return;
+        }
+
+        // 🍠 on ready state response ready
+        xhr.onreadystatechange = () => {
+          let state = xhr.readyState;
+          let response = xhr.responseText;
+
+          switch (state) {
+            case 0:
+              log("ready state: 0, UNSENT");
+              break;
+            case 1:
+              log("ready state: 1, OPENED");
+              break;
+            case 2:
+              log("ready state: 2, HEADERS RECEIVED");
+              break;
+            case 3:
+              log("ready state 3, LOADING");
+              break;
+            case 4:
+              log(`ready state 4, DONE, XMLHttpRequest response: ${response}`);
+              break;
+            default:
+              log("ready state: DEFAULT");
+          } // end switch()
+        }; // end onreadystatechange
+
+        // 🍭 XMLHttpRequest transaction completed successfully
+        xhr.onload = () => {
+          log("XMLHttpRequest completed successfully");
+          form.style.display = "none";
+          document.querySelector(".w-form-done").style.display = "block";
+          document.querySelector(".w-form-fail").style.display = "none";
+        };
+
+        // 🥒 error response handler
+        xhr.onerror = () => {
+          log("Oops, something went wrong.");
+          document.querySelector(".w-form-fail").style.display = "block";
+        };
+
+        xhr.send(formData);
+      } // end makeCORSRequest ()
+    }); // end DOM listener
   </script>
 
   <!--  salesviewer  -->
