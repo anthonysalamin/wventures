@@ -314,9 +314,11 @@
       * build date: 21.09.2020 | anthonysalamin.ch
     */
     document.addEventListener("DOMContentLoaded", (event) => {
-      // options
+      // globals
       const log = console.log,
-        form = document.getElementById("wf-form-contact");
+        form = document.getElementById("wf-form-contact"),
+        formFail = document.querySelector(".w-form-fail"),
+        formDone = document.querySelector(".w-form-done");
 
       // on submit, execute custom action
       form.addEventListener("submit", (event) => {
@@ -383,28 +385,27 @@
 
         // 🍭 XMLHttpRequest transaction completed successfully
         xhr.onload = () => {
-          log("XMLHttpRequest is finished");
           const json = xhr.responseText,
             response = JSON.parse(json);
           if (response.hasOwnProperty("error")) {
             log(`error, ${response.error}`);
-            document.querySelector(".w-form-fail").style.display = "block";
-            document.querySelector(".w-form-fail").textContent = `Oops, ${response.error}`;
+            formFail.style.display = "block";
+            formFail.textContent = `Oops, ${response.error}`;
           } else if (response.hasOwnProperty("success")) {
             form.style.display = "none";
-            document.querySelector(".w-form-done").style.display = "block";
-            document.querySelector(".w-form-fail").textContent =
-              "Thank you, your message has been sent.";
-            document.querySelector(".w-form-fail").style.display = "none";
+            formDone.style.display = "block";
+            formDone.textContent = "Thank you, your message has been sent.";
+            formFail.style.display = "none";
           } else {
             log("Oops, no response from usebasin");
           }
+          log("XMLHttpRequest is finished");
         };
 
         // 🥒 error response handler
         xhr.onerror = () => {
           log("Oops, something went wrong.");
-          document.querySelector(".w-form-fail").style.display = "block";
+          formFail.style.display = "block";
         };
 
         xhr.send(formData);
