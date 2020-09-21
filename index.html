@@ -65,7 +65,7 @@
       })
     });
   </script>
-  
+
   <!-- Google recaptcha  -->
   <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
 
@@ -321,8 +321,11 @@
   </script>
 
   <script>
+    /*
+     * make recaptcha required
+    */
     window.onload = function () {
-      var $recaptcha = document.querySelector('#g-recaptcha-response');
+      const $recaptcha = document.querySelector('#g-recaptcha-response');
 
       if ($recaptcha) {
         $recaptcha.setAttribute("required", "required");
