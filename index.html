@@ -65,8 +65,23 @@
       })
     });
   </script>
-  <!--  Google recaptcha  -->
+  
+  <!-- Google recaptcha  -->
   <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+  <!-- recaptcha required  -->
+  <style>
+    #g-recaptcha-response {
+      display: block !important;
+      position: absolute;
+      margin: -78px 0 0 0 !important;
+      width: 302px !important;
+      height: 76px !important;
+      z-index: -999999;
+      opacity: 0;
+    }
+  </style>
+
   <style>
     /* Google Maps */
     #map {
@@ -74,6 +89,8 @@
       width: 100%
     }
   </style>
+
+
 </head>
 
 <body class="body">
@@ -302,6 +319,17 @@
       document.getElementById("wf-form-contact").submit();
     }
   </script>
+
+  <script>
+    window.onload = function () {
+      var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+      if ($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+      }
+    };
+  </script>
+
   <!--  salesviewer  -->
   <script>!function (s, a, l, e, sv, i, ew, er) { try { a = s[a] || s[l] || function () { throw "no_xhr" }, sv = i = "//salesviewer.org", l = s.SV_XHR = function (d) { return er = new a, er.onerror = function () { if (sv != i) throw "load_err"; sv = "//www.salesviewer.com", setTimeout(l.bind(null, d), 0) }, er.onload = function () { (s.execScript || s.eval).call(er, er.responseText) }, er.open("POST", sv, !0), er.withCredentials = true, er.send(d), er }, l("h_json=" + 1 * ("JSON" in s && void 0 !== JSON.parse) + "&h_wc=1&h_event=" + 1 * ("addEventListener" in s) + "&sva=" + e) } catch (x) { s = new Image, s.src = "//salesviewer.org/tle.gif?sva=LE-002286-001&e=" + encodeURIComponent(x) } }(window, "XDomainRequest", "XMLHttpRequest", "LE-002286-001")</script>
   <noscript><img src="https://salesviewer.org/LE-002286-001.gif" style="visibility:hidden;"></noscript>
