@@ -324,13 +324,12 @@
     /*
      * make recaptcha required
     */
-    window.onload = function () {
-      const $recaptcha = document.querySelector('#g-recaptcha-response');
-
-      if ($recaptcha) {
-        $recaptcha.setAttribute("required", "required");
+    document.addEventListener("DOMContentLoaded", () => {
+      const recaptchaResponse = document.querySelector("#g-recaptcha-response");
+      if (recaptchaResponse) {
+        recaptchaResponse.setAttribute("required", "required");
       }
-    };
+    });
   </script>
 
   <!--  salesviewer  -->
