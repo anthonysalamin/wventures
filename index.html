@@ -333,17 +333,17 @@
               console.log("success, form sent");
               parent = $(form.parent());
               form.css("display", "none");
-              document.querySelector(".w-form-done").css("display", "block");
+              document.querySelector(".w-form-done").style.display = "block";
             } else {
               /* failed submission - log the output to the console and show the failure message */
               console.log(data);
-              document.querySelector(".w-form-fail").css("display", "block");
+              document.querySelector(".w-form-fail").style.display = "block";
             }
           },
           error: function () {
             /* failed submission - show the failure message */
             console.log("error, recaptcha not validated");
-            document.querySelector(".w-form-fail").css("display", "block");
+            document.querySelector(".w-form-fail").style.display = "block";
           }
         });
       });
