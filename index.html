@@ -238,7 +238,7 @@
       </div>
       <!-- form end -->
       <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
+        <div>Thank you! Your submission has been sent!</div>
       </div>
       <div class="w-form-fail">
         <div>Oops! Something went wrong while submitting the form.</div>
@@ -334,6 +334,7 @@
               parent = $(form.parent());
               form.css("display", "none");
               document.querySelector(".w-form-done").style.display = "block";
+              document.querySelector(".w-form-fail").style.display = "none";
             } else {
               /* failed submission - log the output to the console and show the failure message */
               console.log(data);
