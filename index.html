@@ -203,7 +203,7 @@
       <h1 class="h1-dark-style">Let&#x27;s talk,</h1>
       <div class="w-form">
         <!-- form begin -->
-        <form id="wf-form-contact" name="wf-form-contact" method="post" action="https://usebasin.com/f/17c71d7c39d7">
+        <form id="wf-form-contact" name="wf-form-contact" method="post" action="https://usebasin.com/f/17c71d7c39d7" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy">
           <div class="w-clearfix">
             <div class="w-row">
               <div class="form-column w-col w-col-4"><input type="text" class="form-field w-input" maxlength="256"
@@ -314,6 +314,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       const recaptchaResponse = document.querySelector("#g-recaptcha-response");
       if (recaptchaResponse) {
+        console.log("recaptchaResponse");
         recaptchaResponse.setAttribute("required", "required");
       }
     });
