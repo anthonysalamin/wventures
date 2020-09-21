@@ -234,8 +234,8 @@
             <!-- recaptcha -->
             <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
           </div><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button">
+        </form>
       </div>
-      </form>
       <!-- form end -->
       <div class="w-form-done">
         <div>Thank you! Your submission has been received!</div>
@@ -333,17 +333,17 @@
               console.log("success, form sent");
               parent = $(form.parent());
               parent.children("form").css("display", "none");
-              document.querySelector(".w-form-done").css("display", "block");
+              parent(".w-form-done").css("display", "block");
             } else {
               /* failed submission - log the output to the console and show the failure message */
               console.log(data);
-              document.querySelector(".w-form-fail").css("display", "block");
+              parent(".w-form-fail").css("display", "block");
             }
           },
           error: function () {
             /* failed submission - show the failure message */
             console.log("error while submitting the form");
-            document.querySelector(".w-form-fail").css("display", "block");
+            parent(".w-form-fail").css("display", "block");
           }
         });
       });
