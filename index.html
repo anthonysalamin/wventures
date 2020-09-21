@@ -357,7 +357,7 @@
         // 🍠 on ready state response ready
         xhr.onreadystatechange = () => {
           let state = xhr.readyState;
-          let response = xhr.responseText;
+          const response = xhr.responseText;
 
           switch (state) {
             case 0:
@@ -382,10 +382,18 @@
 
         // 🍭 XMLHttpRequest transaction completed successfully
         xhr.onload = () => {
-          log("XMLHttpRequest completed successfully");
-          form.style.display = "none";
-          document.querySelector(".w-form-done").style.display = "block";
-          document.querySelector(".w-form-fail").style.display = "none";
+          log("XMLHttpRequest is finished");
+          const response = xhr.responseText;
+          if (response.hasOwnProperty("error")) {
+            log(`error, ${response.error}`);
+            document.querySelector(".w-form-fail").style.display = "block";
+            document.querySelector(".w-form-fail").textContent = response.error;
+          } else {
+            form.style.display = "none";
+            document.querySelector(".w-form-done").style.display = "block";
+            document.querySelector(".w-form-fail").textContent = "Thank you, your message has been sent.";
+            document.querySelector(".w-form-fail").style.display = "none";
+          }
         };
 
         // 🥒 error response handler
