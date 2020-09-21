@@ -332,18 +332,18 @@
               /* successful submission - hide the form and show the success message */
               console.log("success, form sent");
               parent = $(form.parent());
-              parent.children("form").css("display", "none");
-              parent(".w-form-done").css("display", "block");
+              form.css("display", "none");
+              document.querySelector(".w-form-done").css("display", "block");
             } else {
               /* failed submission - log the output to the console and show the failure message */
               console.log(data);
-              parent(".w-form-fail").css("display", "block");
+              document.querySelector(".w-form-fail").css("display", "block");
             }
           },
           error: function () {
             /* failed submission - show the failure message */
-            console.log("error while submitting the form");
-            parent(".w-form-fail").css("display", "block");
+            console.log("error, recaptcha not validated");
+            document.querySelector(".w-form-fail").css("display", "block");
           }
         });
       });
