@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- netlify version -->
+<!-- Netlify 🍋 -->
 <html lang="en">
 
 <head>
@@ -333,16 +333,17 @@
               console.log("success, form sent");
               parent = $(form.parent());
               parent.children("form").css("display", "none");
-              parent.children(".w-form-done").css("display", "block");
+              document.querySelector(".w-form-done").css("display", "block");
             } else {
               /* failed submission - log the output to the console and show the failure message */
               console.log(data);
-              parent.find(".w-form-fail").css("display", "block");
+              document.querySelector(".w-form-fail").css("display", "block");
             }
           },
           error: function () {
             /* failed submission - show the failure message */
-            parent.find(".w-form-fail").css("display", "block");
+            console.log("error while submitting the form");
+            document.querySelector(".w-form-fail").css("display", "block");
           }
         });
       });
