@@ -212,7 +212,6 @@ img {
 
 .submit {
   display: block;
-  width: 100%;
   margin-top: 0px;
   padding-top: 9px;
   padding-right: 80px;
@@ -505,7 +504,6 @@ img {
 
 .usebasin-captcha {
   display: inline-block;
-  width: 100%;
   color: #fff;
 }
 
