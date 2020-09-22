@@ -349,7 +349,6 @@
       function makeCORSRequest() {
         const method = "POST",
           action = `https://usebasin.com/f/17c71d7c39d7.json`,
-          dataType = "json",
           formData = new FormData(form);
 
         let xhr = createCORSRequest(method, action);
@@ -408,7 +407,7 @@
           log("Oops, something went wrong.");
           formFail.style.display = "block";
         };
-
+        xhr.setRequestHeader("Accept", "application/json");
         xhr.send(formData);
       } // end makeCORSRequest ()
     }); // end DOM listener
