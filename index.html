@@ -316,6 +316,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       // globals
       const log = console.log,
+        endpoint = "https://usebasin.com/f/17c71d7c39d7",
         form = document.getElementById("wf-form-contact"),
         submitBtn = document.querySelector("input[type=submit]"),
         gotcha = document.querySelector("input[name=_gotcha]"),
@@ -330,7 +331,7 @@
           log("bot alert, form aborted");
           return;
         } else {
-          log("you are human, crafting request");
+          log("human detected, crafting request");
           submitBtn.value = "sending...";
           createCORSRequest();
           makeCORSRequest();
@@ -357,7 +358,7 @@
       // 🥭 Make the actual CORS request
       function makeCORSRequest() {
         const method = "POST",
-          action = `https://usebasin.com/f/17c71d7c39d7.json`,
+          action = `${endpoint}.json`,
           formData = new FormData(form);
 
         let xhr = createCORSRequest(method, action);
@@ -397,8 +398,8 @@
         // 🍭 XMLHttpRequest transaction completed successfully
         xhr.onload = () => {
           // recaptcha handling
-          const json = xhr.responseText,
-            response = JSON.parse(json);
+          const json = xhr.responseText, // json object
+            response = JSON.parse(json); // javasript object
           if (response.hasOwnProperty("error")) {
             log(`error, ${response.error}`);
             submitBtn.value = "Submit again";
@@ -426,6 +427,7 @@
         xhr.send(formData);
       } // end makeCORSRequest ()
     }); // end DOM listener
+
   </script>
 
   <!--  salesviewer  -->
