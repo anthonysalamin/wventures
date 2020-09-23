@@ -226,14 +226,14 @@
           </div><textarea id="Message" name="Message" maxlength="5000" required="" placeholder="Message *"
             class="form-field form-message w-input"></textarea>
           <div class="usebasin-bot w-embed">
-            <!-- honeypot -->
-            <input type="hidden" name="_gotcha">
+            <!-- bot honeypots -->
+            <input type="text" name="_gotcha" style="display: none;" placeholder="gotcha">
           </div>
           <div class="usebasin-captcha w-embed">
             <!-- recaptcha -->
             <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
           </div>
-          <input type="submit" value="Submit" data-wait="Please wait..." class="submit w-button">
+          <input type="submit" value="Submit" class="submit w-button">
         </form>
       </div>
       <!-- form end -->
@@ -317,15 +317,25 @@
       // globals
       const log = console.log,
         form = document.getElementById("wf-form-contact"),
+        submitBtn = document.querySelector("input[type=submit]"),
+        gotcha = document.querySelector("input[name=_gotcha]"),
         formFail = document.querySelector(".w-form-fail"),
         formDone = document.querySelector(".w-form-done");
 
-      // on submit, execute custom action
+      // 🥝 on submit, execute custom action
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        createCORSRequest();
-        makeCORSRequest();
-      }); // end click listener
+        // 🦠 bot management
+        if (gotcha.value != "") {
+          log("bot alert, form aborted");
+          return;
+        } else {
+          log("you are human, crafting request");
+          submitBtn.value = "sending...";
+          createCORSRequest();
+          makeCORSRequest();
+        }
+      });
 
       // 🥬 Create the XHR object
       function createCORSRequest(method, action) {
@@ -373,9 +383,11 @@
               break;
             case 3:
               log("ready state 3, LOADING");
+              submitBtn.value = "loading...";
               break;
             case 4:
               log(`ready state 4, DONE, XMLHttpRequest response: ${response}`);
+              // reset submit value on success request
               break;
             default:
               log("ready state: DEFAULT");
@@ -384,26 +396,30 @@
 
         // 🍭 XMLHttpRequest transaction completed successfully
         xhr.onload = () => {
+          // recaptcha handling
           const json = xhr.responseText,
             response = JSON.parse(json);
           if (response.hasOwnProperty("error")) {
             log(`error, ${response.error}`);
+            submitBtn.value = "Submit again";
             formFail.style.display = "block";
             formFail.textContent = `Oops, ${response.error}`;
           } else if (response.hasOwnProperty("success")) {
+            log("form sent successfully");
+            submitBtn.value = "Submit";
             form.style.display = "none";
             formDone.style.display = "block";
             formDone.textContent = "Thank you, your message has been sent.";
             formFail.style.display = "none";
           } else {
-            log("Oops, no response from usebasin");
+            log("Oops, no server response from usebasin");
           }
           log("XMLHttpRequest is finished");
         };
 
         // 🥒 error response handler
         xhr.onerror = () => {
-          log("Oops, something went wrong.");
+          log("Oops, something went really wrong.");
           formFail.style.display = "block";
         };
         xhr.setRequestHeader("Accept", "application/json");
