@@ -526,6 +526,14 @@ img {
   cursor: pointer;
 }
 
+.text-block {
+  color: #ff5858;
+}
+
+.error-message {
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 991px) {
   .description-section {
     padding-right: 40px;
