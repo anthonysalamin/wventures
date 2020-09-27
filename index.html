@@ -310,25 +310,36 @@
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
     /*
-      * usebasin AJAX CORS
-      * build date: 21.09.2020 | anthonysalamin.ch
-    */
+   * Usebasin + XHR request + bot handling
+   * Build date: 27/09/2020
+   */
     document.addEventListener("DOMContentLoaded", () => {
       // globals
       const log = console.log,
         endpoint = "https://usebasin.com/f/17c71d7c39d7",
         form = document.getElementById("wf-form-contact"),
+        emailField = document.querySelector("input[type=email]"),
         submitBtn = document.querySelector("input[type=submit]"),
         gotcha = document.querySelector("input[name=_gotcha]"),
         formFail = document.querySelector(".w-form-fail"),
         formDone = document.querySelector(".w-form-done");
 
+      // 🤖 known email being spam
+      const knownSpamEmail = [
+        "s.pronin@info.avalins.com",
+        "info@domainworld.com",
+        "no-replyEsons@gmail.com",
+        "facheeva@mail.ru",
+        "doompetrody@gmail.com"
+      ];
+
       // 🥝 on submit, execute custom action
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
         // 🦠 bot management
-        if (gotcha.value != "") {
-          log("bot alert, form aborted");
+        if (gotcha.value != "" || knownSpamEmail.includes(emailField.value)) {
+          alert("bot alert, form aborted");
           return;
         } else {
           log("human detected, crafting request");
@@ -387,19 +398,18 @@
               submitBtn.value = "loading...";
               break;
             case 4:
-              log(`ready state 4, DONE, XMLHttpRequest response: ${response}`);
+              log("ready state 4, DONE");
               // reset submit value on success request
               break;
             default:
-              log("ready state: DEFAULT");
+              log("ready state: UNKNOWN");
           } // end switch()
         }; // end onreadystatechange
 
         // 🍭 XMLHttpRequest transaction completed successfully
         xhr.onload = () => {
+          const response = JSON.parse(xhr.responseText);
           // recaptcha handling
-          const json = xhr.responseText, // json object
-            response = JSON.parse(json); // javasript object
           if (response.hasOwnProperty("error")) {
             log(`error, ${response.error}`);
             submitBtn.value = "Submit again";
@@ -427,7 +437,6 @@
         xhr.send(formData);
       } // end makeCORSRequest ()
     }); // end DOM listener
-
   </script>
 
   <!--  salesviewer  -->
