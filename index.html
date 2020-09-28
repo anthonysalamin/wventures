@@ -208,7 +208,7 @@
               placeholder="Message *" class="form-field form-message w-input"></textarea>
             <div class="usebasin-bot w-embed">
               <!--  honeypot  -->
-              <input type="hidden" name="honeypot"></div>
+              <input type="hidden" name="_gotcha"></div>
             <div class="usebasin-captcha w-embed">
               <!--  recaptcha  -->
               <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
@@ -307,7 +307,7 @@
         nameField = document.querySelector("input[name=name]"),
         emailField = document.querySelector("input[type=email]"),
         submitBtn = document.querySelector("input[type=submit]"),
-        gotcha = document.querySelector("input[name=honeypot]"),
+        gotcha = document.querySelector("input[name=_gotcha]"),
         formFail = document.querySelector(".w-form-fail"),
         formDone = document.querySelector(".w-form-done"),
         textFail = document.getElementById("text-fail"),
