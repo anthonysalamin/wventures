@@ -374,6 +374,7 @@ img {
 }
 
 .embed-map {
+  display: none;
   height: 500px;
   background-color: #e7e7e7;
 }
@@ -540,31 +541,38 @@ img {
     padding-right: 40px;
     padding-left: 40px;
   }
+
   .copyright-section.copyright-link {
     padding-right: 40px;
     padding-left: 40px;
   }
+
   .paragraph-footer {
     margin-top: 40px;
     margin-bottom: 0px;
     text-align: center;
   }
+
   .row {
     margin-right: 0px;
     margin-left: 0px;
     padding-top: 0px;
   }
+
   .form-section {
     padding-right: 40px;
     padding-left: 40px;
   }
+
   .section-shema {
     padding-right: 10px;
     padding-left: 10px;
   }
+
   .heading-3 {
     text-align: center;
   }
+
   .empty-column {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -575,15 +583,19 @@ img {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
+
   .strich.left {
     left: 0px;
   }
+
   .strich.right {
     right: 0px;
   }
+
   .section---hero {
     height: 70vh;
   }
+
   .hero---logo {
     width: 200px;
   }
@@ -593,30 +605,37 @@ img {
   ._w-ventures-inline-logo {
     width: 60%;
   }
+
   .container {
     padding-right: 30px;
     padding-left: 30px;
   }
+
   .footer-section {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
   .copyright-footer {
     text-align: center;
   }
+
   .section-shema {
     padding-right: 106px;
     padding-left: 106px;
   }
+
   .form-column {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .image-12 {
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
+
   .div-block-3 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -632,32 +651,41 @@ img {
     -ms-flex-align: center;
     align-items: center;
   }
+
   .empty-column {
     height: 80px;
   }
+
   .copy-shema.specialites {
     margin-right: -60px;
     margin-left: -60px;
   }
+
   .strich {
     width: 4px;
     height: 100%;
   }
+
   .menu-button {
     background-color: transparent;
   }
+
   .menu-button.w--open {
     background-color: rgba(255, 0, 0, 0);
   }
+
   .wrap_logo {
     height: 100vh;
   }
+
   .section---hero {
     height: 100vh;
   }
+
   .hero---logo {
     width: 150px;
   }
+
   .nav-menu {
     background-color: transparent;
   }
@@ -669,29 +697,36 @@ img {
     line-height: 23px;
     text-align: center;
   }
+
   ._w-ventures-inline-logo {
     margin-bottom: 30px;
   }
+
   .hero-section {
     min-height: 70vh;
   }
+
   .description-section {
     margin-top: 50px;
     margin-bottom: 80px;
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .social-media-icon {
     display: block;
   }
+
   .footer-section {
     margin: 100px 10px 80px;
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .copyright-section.copyright-link {
     padding: 80px 10px 60px;
   }
+
   .copyright-footer {
     padding-right: 20px;
     padding-left: 20px;
@@ -699,45 +734,55 @@ img {
     line-height: 20px;
     text-align: center;
   }
+
   .paragraph-footer {
     margin-top: 0px;
     margin-bottom: 20px;
   }
+
   .nav-header {
     padding-right: 0px;
     padding-left: 10px;
   }
+
   .image-9 {
     width: 25px;
   }
+
   .form-section {
     height: 700px;
     min-height: 70vh;
     padding-right: 10px;
     padding-left: 10px;
   }
+
   .container-2 {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   .section-shema {
     margin-top: 50px;
     margin-bottom: 70px;
     padding-right: 51px;
     padding-left: 51px;
   }
+
   .shema-div {
     margin-right: 0px;
     margin-left: 0px;
   }
+
   .heading-3 {
     font-size: 16px;
     line-height: 26px;
     text-align: left;
   }
+
   .heading-3.homepage {
     text-align: center;
   }
+
   .submit {
     width: 100%;
     padding-top: 15px;
@@ -746,19 +791,23 @@ img {
     font-size: 18px;
     text-align: center;
   }
+
   .form-field {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .form-column {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .image-12 {
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
+
   .div-block-3 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -776,28 +825,35 @@ img {
     align-items: center;
     text-align: center;
   }
+
   .heading-dark {
     font-size: 25px;
   }
+
   .section {
     margin-right: 15px;
     margin-left: 15px;
   }
+
   .empty-column {
     height: 70px;
   }
+
   .copy-shema.specialites {
     margin-right: -36px;
     margin-left: -36px;
   }
+
   .strich {
     width: 4px;
     height: 100%;
   }
+
   .section---hero {
     height: 100vh;
     background-position: 100% 44%;
   }
+
   .hero---logo {
     width: 100px;
   }
