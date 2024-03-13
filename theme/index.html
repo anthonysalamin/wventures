@@ -1272,15 +1272,14 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(successURL);
   observeFormDisplay(form, successURL);
 });
+function extractBaseUrl(urlString) {
+  const url = new URL(urlString);
+  const baseUrl = url.origin;
+  return baseUrl;
+}
 function targetURL() {
   const currentURL = window.location.href;
-  // const currentURL = "https://baobabenergy.webflow.io/contact/"; // test
-  function removeTrailingSlash(url) {
-    return url.endsWith("/") ? url.slice(0, -1) : url;
-  }
-  const cleanedURL = removeTrailingSlash(currentURL);
-  const trimmedURL = cleanedURL.slice(0, cleanedURL.lastIndexOf("/"));
-  return trimmedURL;
+  return extractBaseUrl(currentURL)
 }
 function observeFormDisplay(form, successURL) {
   const observer = new MutationObserver((mutations) => {
