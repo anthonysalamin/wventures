@@ -1449,6 +1449,26 @@ collections:
             label: Text
             name: '-2fe3ed62'
             widget: text
+          - hint: 'Original text: Thank you , key: 33b7d777'
+            label: Text
+            name: 33b7d777
+            widget: string
+          - hint: >-
+              Original text: we have received your request and will get back to
+              you ASAP., key: 64041d96
+            label: Text
+            name: 64041d96
+            widget: string
+          - hint: >-
+              Original text: Your inquiry is in good hands—expect a swift
+              response from us soon., key: -1edb60ed
+            label: Text
+            name: '-1edb60ed'
+            widget: string
+          - hint: 'Original text: Back Home, key: -3c849388'
+            label: Text
+            name: '-3c849388'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
