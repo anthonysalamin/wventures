@@ -2477,7 +2477,7 @@ blockquote {
   display: flex;
 }
 
-.translations__hidden {
+.translations__hidden, .language-wrap {
   display: none;
 }
 
