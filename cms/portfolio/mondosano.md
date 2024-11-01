@@ -1,27 +1,23 @@
 ---
 f_website-link: http://www.mondosano.de/
-f_exited: false
-f_short-description: >-
-  Mondosano specializes in data-driven patient recruitment, engagement, and
-  insight campaigns, prioritizing patient-centric solutions in Hamburg.
+f_not-active: false
 title: Mondosano
-f_location: Hamburg
+f_location: Hamburg, Germany
 f_website-name: mondosano.de
 slug: mondosano
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1617_64f85c6a52213bc21fb8a67c_mondosano.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f729c64c27a5a51af9efce_Mondosano.png
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:30:19.572Z'
-created-on: '2023-10-23T04:19:32.109Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: Germany
-f_categories:
-  - cms/categories/fintech.md
-  - cms/categories/digital-health.md
+updated-on: '2023-09-05T13:15:16.164Z'
+created-on: '2023-09-05T13:15:16.164Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---
 
-Mondosano is a patient-centric digital recruitment provider based in Hamburg, Germany. Mondosano is specialized in data-driven patient recruitment, as well as patient engagement and patients insight campaigns.
+Mondosano is a patient-centric digital recruitment provider based in Hamburg, Germany. Mondosano is specialized in data-driven patient recruitment, as well as patient engagement and patients insight campaigns.  
+
+  
+
+‍

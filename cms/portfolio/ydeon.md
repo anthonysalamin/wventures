@@ -1,27 +1,17 @@
 ---
 f_website-link: https://www.ydeon.com/
-f_exited: false
-f_short-description: >-
-  Leading European digital hub for garden projects, uniting GartenHaus GmbH,
-  Polhus, and OutdoorToys in Hamburg-based operation.
+f_not-active: false
 title: Ydeon
-f_location: Hamburg
+f_location: Hamburg, Germany
 f_website-name: ydeon.com
 slug: ydeon
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1627_64f85b3d3934ea24a2ae1260_ydeon.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f72c3236a5c42f4d0cf8a0_ydeon.png
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:25:11.434Z'
-created-on: '2023-10-23T04:19:34.863Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: Germany
-f_categories:
-  - cms/categories/commerce.md
-  - cms/categories/industrial.md
-  - cms/categories/media.md
-  - cms/categories/marketing.md
+updated-on: '2023-09-05T13:25:21.453Z'
+created-on: '2023-09-05T13:25:21.453Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---

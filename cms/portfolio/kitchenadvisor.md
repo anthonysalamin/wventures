@@ -1,26 +1,23 @@
 ---
 f_website-link: https://www.kitchenadvisor.de/en/
-f_exited: false
-f_short-description: >-
-  KitchenAdvisor links customers with ideal kitchen studios using algorithms,
-  offering price predictions and regional studio matching.
+f_not-active: false
 title: KitchenAdvisor
-f_location: Hamburg
+f_location: Hamburg, Germany
 f_website-name: kitchenadvisor.de
 slug: kitchenadvisor
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf162c_64f85cc83a05ffa0053a3f61_kitchenadvisor.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f71d4ef8e1c0204d23ea81_Kitchenadvisor.png
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:32:29.143Z'
-created-on: '2023-10-23T04:19:30.977Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: Germany
-f_categories:
-  - cms/categories/commerce.md
+updated-on: '2023-09-05T12:21:48.902Z'
+created-on: '2023-09-05T12:21:48.902Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---
 
-KitchenAdvisor is a referral platform for kitchens. They connect the customer with the perfect kitchen studio. They support the whole thing with 2 algorithms: The Price Predictor, which is able to give the customer a price for the kitchen within 10 minutes, and the Store Matcher, which uses machine learning to find the best studios in the region.
+KitchenAdvisor is a referral platform for kitchens. They connect the customer with the perfect kitchen studio. They support the whole thing with 2 algorithms: The Price Predictor, which is able to give the customer a price for the kitchen within 10 minutes, and the Store Matcher, which uses machine learning to find the best studios in the region.  
+
+  
+
+‍

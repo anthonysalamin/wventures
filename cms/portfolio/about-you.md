@@ -1,26 +1,17 @@
 ---
+f_not-active: true
 f_website-link: https://www.aboutyou.ch/
-f_exited: true
-f_short-description: >-
-  ABOUT YOU enhances the shopping experience, offering personalized fashion
-  choices from 2,000+ brands through their app and website.
 title: ABOUT YOU
-f_location: Hamburg
+f_location: Hamburg, Germany
 f_website-name: aboutyou.com
+slug: about-you
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1625_64f85ded040d8ac9d3c0b414_aboutyou.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f708d1309acba2b5cb2a48_AboutYou.png
   alt: null
-slug: about-you
-f_status: cms/status/exited.md
-updated-on: '2023-10-23T09:38:12.297Z'
-created-on: '2023-10-23T04:19:27.417Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: Germany
-f_categories:
-  - cms/categories/commerce.md
-  - cms/categories/business-software.md
-  - cms/categories/marketing.md
+updated-on: '2023-09-05T10:54:28.643Z'
+created-on: '2023-09-05T10:54:28.643Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---

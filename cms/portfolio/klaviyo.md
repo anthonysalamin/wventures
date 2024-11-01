@@ -1,25 +1,17 @@
 ---
 f_website-link: https://www.klaviyo.com/
-f_exited: false
-f_short-description: >-
-  Klaviyo empowers online businesses with data-driven marketing automation,
-  fostering direct customer relationships and boosting revenue.
+f_not-active: false
 title: KLAVIYO
-f_location: Greater Boston Area, New England
+f_location: Greater Boston Area, east Coast, New England, USA
 f_website-name: klaviyo.com
 slug: klaviyo
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1615_64f85cbaf1ff75c36764d755_klaviyo.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f71d76a723134849e4b2c3_klaviyo.png
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:32:14.213Z'
-created-on: '2023-10-23T04:19:31.019Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: USA
-f_categories:
-  - cms/categories/commerce.md
-  - cms/categories/fintech.md
+updated-on: '2023-09-05T12:22:47.617Z'
+created-on: '2023-09-05T12:22:47.617Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---

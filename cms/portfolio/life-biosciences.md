@@ -1,26 +1,17 @@
 ---
 f_website-link: http://www.lifebiosciences.com/
-f_exited: false
-f_short-description: >-
-  Life Biosciences, based in Boston, MA, focuses on developing therapies
-  targeting key aging-related molecular pathways.
+f_not-active: false
 title: Life BioSciences
-f_location: Boston
+f_location: Boston, USA
 f_website-name: lifebiosciences.com
 slug: life-biosciences
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1620_64f85ca79b255a918ca3f800_life.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f71dae2dddd4da8b175a89_Life%20Biosciences.jpg
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:31:53.803Z'
-created-on: '2023-10-23T04:19:31.248Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: USA
-f_categories:
-  - cms/categories/digital-health.md
-  - cms/categories/fintech.md
-  - cms/categories/insurtech.md
+updated-on: '2023-09-05T12:23:30.634Z'
+created-on: '2023-09-05T12:23:30.634Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---

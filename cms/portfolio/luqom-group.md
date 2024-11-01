@@ -1,25 +1,17 @@
 ---
 f_website-link: https://www.luqom.com/
-f_exited: false
-f_short-description: >-
-  LUQOM GROUP is Europe's top lighting fixture digital platform, serving both
-  consumers and professionals with diverse products and services.
+f_not-active: false
 title: Luqom Group
-f_location: Berlin
+f_location: Berlin, Germany
 f_website-name: luqom.com
 slug: luqom-group
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf162a_64f85c8192c244ded869dcc2_luqom.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f7298cff2c97c70179e4e7_LUQOM_sRGB_Logo.jpg
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:31:08.239Z'
-created-on: '2023-10-23T04:19:31.572Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: Germany
-f_categories:
-  - cms/categories/industrial.md
-  - cms/categories/commerce.md
+updated-on: '2023-09-05T13:14:24.926Z'
+created-on: '2023-09-05T13:14:24.926Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---

@@ -1,25 +1,17 @@
 ---
 f_website-link: https://cantourage.com/
-f_exited: false
-f_short-description: >-
-  Cantourage GmbH, based in Berlin, facilitates European market entry for global
-  medical cannabis producers, simplifying regulatory hurdles.
+f_not-active: false
 title: Cantourage
-f_location: Berlin
+f_location: Berlin, Germany
 f_website-name: cantourage.com
 slug: cantourage
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1596_64f85da3ac4d6ff1344fc8ea_cantourage.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f715b7c61ce80acdf6fee4_Cantourage.jpg
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:39:33.326Z'
-created-on: '2023-10-23T04:19:27.393Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: Germany
-f_categories:
-  - cms/categories/digital-health.md
-  - cms/categories/mobility-logistics.md
+updated-on: '2023-09-05T11:49:36.713Z'
+created-on: '2023-09-05T11:49:36.713Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---

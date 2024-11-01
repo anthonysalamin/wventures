@@ -1,25 +1,17 @@
 ---
 f_website-link: https://carbonhealth.com/
-f_exited: false
-f_short-description: >-
-  Carbon Health revolutionizes healthcare with technology, offering
-  personalized, accessible, and high-quality primary, urgent, and virtual care.
+f_not-active: false
 title: Carbon Health
-f_location: San Francisco
+f_location: San Francisco, USA
 f_website-name: carbonhealth.com
 slug: carbon-health
 f_logotype:
   url: >-
-    https://uploads-ssl.webflow.com/653a411988acafa2d1bf1551/653a411988acafa2d1bf1626_64f85d96fafa46dcfe59d6b3_carbonhealth.png
+    https://cdn.prod.website-files.com/64f7085279693bcfdc730ee3/64f715e90ff994dcd40c846c_CarbonHealth.png
   alt: null
-f_status: cms/status/active.md
-updated-on: '2023-10-23T09:36:06.055Z'
-created-on: '2023-10-23T04:19:29.020Z'
-published-on: '2023-10-26T10:54:25.765Z'
-f_country: USA
-f_categories:
-  - cms/categories/digital-health.md
-  - cms/categories/business-software.md
+updated-on: '2023-09-05T11:50:28.425Z'
+created-on: '2023-09-05T11:50:28.425Z'
+published-on: '2023-09-28T08:59:23.457Z'
 layout: '[portfolio].html'
 tags: portfolio
 ---
