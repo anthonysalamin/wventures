@@ -1977,6 +1977,25 @@ collections:
             label: Text
             name: '77e12519'
             widget: text
+          - hint: 'Original text: Deep Mine, key: -22020f9'
+            label: Text
+            name: '-22020f9'
+            widget: string
+          - hint: 'Original text: deep-mine.com, key: -6eae82d9'
+            label: Text
+            name: '-6eae82d9'
+            widget: string
+          - hint: 'Original text: Paris, France, key: -7ca6dee6'
+            label: Text
+            name: '-7ca6dee6'
+            widget: string
+          - hint: >-
+              Original text: The next-generation defense prime building
+              autonomous, cost-effective, and scalable defense systems., key:
+              6e10d0bf
+            label: Text
+            name: 6e10d0bf
+            widget: text
           - hint: 'Original text: b, key: 62'
             label: Text
             name: '62'
@@ -2977,6 +2996,10 @@ collections:
             label: Link
             name: 61272cd6
             widget: string
+          - hint: 'Original link: https://www.deep-mine.com/, key: 562ce62e'
+            label: Link
+            name: 562ce62e
+            widget: string
           - hint: 'Original link: /jp/portfolio/, key: 6718481'
             label: Link
             name: '6718481'
@@ -3728,6 +3751,19 @@ collections:
                 required: false
           - label: Image
             name: 5dc8d87f
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 564ec07f
             widget: object
             fields:
               - name: url
