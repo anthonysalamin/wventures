@@ -498,21 +498,6 @@ collections:
             label: Text
             name: '-29f92c17'
             widget: string
-          - hint: >-
-              Original text: As an investor, W Ventures is a member of the
-              Federal Association of German Startups, key: 3d97730a
-            label: Text
-            name: 3d97730a
-            widget: string
-          - hint: >-
-              Original text: Together, we are working to improve the financing
-              conditions for startups. On the one hand, this means modernizing
-              the economic and financial policy framework and, on the other
-              hand, the relevant networks for exchanging experience and
-              know-how., key: 3ab5ccc1
-            label: Text
-            name: 3ab5ccc1
-            widget: text
           - hint: 'Original text: © , key: 1497'
             label: Text
             name: '1497'
@@ -2194,24 +2179,13 @@ collections:
             label: Text
             name: 16f14868
             widget: string
-          - hint: >-
-              Original text: W Venturesは投資家として、ドイツスタートアップ連邦協会のメンバーである, key:
-              2be896d0
+          - hint: 'Original text: 2024, key: 177500'
             label: Text
-            name: 2be896d0
+            name: '177500'
             widget: string
-          - hint: >-
-              Original text:
-              私たちは、スタートアップ企業の資金調達条件を改善するために、共に取り組んでいます。これは、経済・金融政策の枠組みの近代化を意味する一方で、経験やノウハウを交換するための関連ネットワークを意味しています。,
-              key: -20098f08
+          - hint: 'Original text:  W Ventures GmbH. すべての権利は留保されています。, key: -40f7c664'
             label: Text
-            name: '-20098f08'
-            widget: text
-          - hint: >-
-              Original text: © 2024 W Ventures GmbH. すべての権利は留保されています。, key:
-              -541aa60d
-            label: Text
-            name: '-541aa60d'
+            name: '-40f7c664'
             widget: string
           - hint: 'Original text: W Ventures GmbHが米国特許商標庁に登録, key: -5e26c881'
             label: Text
@@ -3179,32 +3153,6 @@ collections:
                 required: false
           - label: Image
             name: b51d368
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 2a7281
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-61b3ecd0'
             widget: object
             fields:
               - name: url
