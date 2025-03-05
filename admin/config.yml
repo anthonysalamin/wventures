@@ -522,9 +522,9 @@ collections:
             label: Text
             name: '-77cd8f98'
             widget: string
-          - hint: 'Original text: anthonysalamin.ch, key: -67104443'
+          - hint: 'Original text: TONYTONY Sàrl, key: 5ae9997b'
             label: Text
-            name: '-67104443'
+            name: 5ae9997b
             widget: string
           - hint: 'Original text: IMPRINT, key: -62663817'
             label: Text
@@ -1962,13 +1962,13 @@ collections:
             label: Text
             name: '77e12519'
             widget: text
-          - hint: 'Original text: Deep Mine, key: -22020f9'
+          - hint: 'Original text: Harmattan AI, key: -6169b3f2'
             label: Text
-            name: '-22020f9'
+            name: '-6169b3f2'
             widget: string
-          - hint: 'Original text: deep-mine.com, key: -6eae82d9'
+          - hint: 'Original text: harmattan.ai, key: -6b34cf84'
             label: Text
-            name: '-6eae82d9'
+            name: '-6b34cf84'
             widget: string
           - hint: 'Original text: Paris, France, key: -7ca6dee6'
             label: Text
@@ -2194,6 +2194,10 @@ collections:
           - hint: 'Original text: ウェブデザイン・開発 y , key: -507a090'
             label: Text
             name: '-507a090'
+            widget: string
+          - hint: 'Original text: anthonysalamin.ch, key: -67104443'
+            label: Text
+            name: '-67104443'
             widget: string
           - hint: 'Original text: データ保護 W Ventures GmbH, key: 20cc4c47'
             label: Text
@@ -2767,9 +2771,9 @@ collections:
             label: Link
             name: 3ef0245d
             widget: string
-          - hint: 'Original link: https://www.anthonysalamin.ch/, key: 64a1e758'
+          - hint: 'Original link: https://www.tonytony.ch, key: 3ca6e501'
             label: Link
-            name: 64a1e758
+            name: 3ca6e501
             widget: string
           - hint: >-
               Original link:
@@ -2970,9 +2974,9 @@ collections:
             label: Link
             name: 61272cd6
             widget: string
-          - hint: 'Original link: https://www.deep-mine.com/, key: 562ce62e'
+          - hint: 'Original link: https://www.harmattan.ai/, key: 12f8402d'
             label: Link
-            name: 562ce62e
+            name: 12f8402d
             widget: string
           - hint: 'Original link: /jp/portfolio/, key: 6718481'
             label: Link
@@ -2981,6 +2985,10 @@ collections:
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
+            widget: string
+          - hint: 'Original link: https://www.anthonysalamin.ch/, key: 64a1e758'
+            label: Link
+            name: 64a1e758
             widget: string
           - hint: >-
               Original link: https://www.wventures.de/jp/home/#about, key:
@@ -3711,7 +3719,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 564ec07f
+            name: 48a53033
             widget: object
             fields:
               - name: url

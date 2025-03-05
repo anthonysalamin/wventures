@@ -861,6 +861,10 @@ img {
   width: 57%;
 }
 
+.thumb-img.harmattan {
+  width: 60%;
+}
+
 .thumb-wrap {
   background-color: var(--white);
   justify-content: center;
